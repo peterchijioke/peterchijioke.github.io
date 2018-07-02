@@ -27,7 +27,7 @@ function GridMaker() {
 
   //An event listener such that whenever any cell is clicked it calls addEvent function and changes it's color.
   for (let i = 0; i < height; i++) {
-      let row = c.insertRow(i);
+      let row = pixelcanvas.insertRow(i);
       for (let j = 0; j < width; j++) {
           let cell = row.insertCell(j);
           cell.addEventListener('click', addEvent(cell));
